@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+ * 노란줄이 생기는 이유:
+ * 1. @apply 지시어는 Tailwind CSS의 특별한 문법으로, CSS 파일에서 직접 사용할 때 
+ *    일반 CSS 문법이 아니기 때문에 에디터가 경고를 표시할 수 있습니다.
+ * 2. 중첩된 @media 쿼리도 표준 CSS가 아닌 PostCSS나 SCSS 문법이므로 경고가 발생할 수 있습니다.
+ * 3. VS Code나 다른 에디터에서 Tailwind CSS 플러그인이 설치되지 않았을 수 있습니다.
+ */
+
 html,
 body {
   @apply bg-white dark:bg-gray-950;
